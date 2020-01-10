@@ -1,0 +1,257 @@
+.remark-slide-content p, ul, ol, li {
+  font-size: 1.8rem;
+}
+
+.remark-slide-content {
+  background-color: #fbf9f4;
+}
+
+.remark-slide-content h1 {
+	margin-bottom: 1.0em !important;
+}
+
+.footnote {
+	bottom: 1em;
+	font-size: 75%;
+}
+
+img {
+	margin-bottom: 1.5rem;
+	overflow: hidden;
+	/*background: #fff;*/
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+
+/* code */
+
+pre {
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 4px #282a36;
+  padding: 0.25em;
+  background-color: #fff;
+  overflow-x: auto;
+  border-radius: 0px; /*undo rounded corners*/
+}
+
+pre code { 
+  background: none; 
+  font-size: 0.8rem;
+}
+
+.hljs {
+	background: #fff !important;
+}
+
+.display {
+  font-weight: 700;
+  color: #E7553C;
+}
+
+.title {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+}
+
+/* link color */
+a, a > code {
+  color: #E7553C;
+}
+
+
+:any-link {
+    color: #E7553C;
+    text-decoration: underline;
+}
+
+
+/* mouse over link */
+a:hover, a:active, a:focus {
+    color: rgba(231,85,60,.8);
+    text-decoration: underline;
+}
+
+.remark-code {
+  color: #E7553C;
+  font-size: 1.25em;
+}
+
+.remark-inline-code { 
+  color: #E7553C;
+  font-size: 1em;
+}
+
+.remark-code-line-highlighted { 
+  background-color:  #bed3eca1; 
+}
+
+.inverse {
+  background-color: #2f5275;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.inverse .remark-inline-code {
+  color:  #FFF;
+}
+
+.inverse a {
+  color: #fff;
+}
+
+.inverse a:hover {
+  color: #bed3ec;
+}
+
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+  width: 25%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+.title-slide {
+  background-image: 
+    /* top is white; middle is orange; bottom is blue */
+    linear-gradient(
+      rgba(255, 255, 255, 0), 
+      rgba(231, 85, 60, .1), 
+      rgba(68, 112, 153, 1)
+    ),
+    /* your image */
+    url(../../images/robert-bye-678640-unsplash.jpg);
+  /*background-image: url(../../images/robert-bye-678640-unsplash.jpg);*/
+  /*background-position: top;*/
+  background-size: cover;
+}
+
+
+.title-slide h1 {
+  font-family: 'Source Sans Pro', serif;
+  color: #FFFFFF;
+  font-size: 3em;
+  padding-top: 1em;
+  line-height: 1em;
+  padding-bottom: .1em;
+  word-wrap: break-word;
+  text-shadow: 3px 3px #404040;
+}
+
+.title-slide h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 1.6em;
+  color: #FFFFFF;
+  text-shadow: none;
+  padding-top: .1em;
+  margin-top: 0px;
+  margin-bottom: .1em;
+}
+
+.title-slide h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6em;
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.6em;
+}
+
+.title-slide h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title-slide a {
+  color: #fff;
+}
+
+/* Wider cols */
+
+.right-wide {
+  width: 60%;
+  float: right;
+  padding-top: 1em;
+}
+
+.left-narrow {
+  width: 40%;
+  float: left;
+  padding-top: 1em;
+}
+
+.left-wide {
+  width: 60%;
+  float: left;
+  padding-top: 1em;
+}
+
+.right-narrow {
+  width: 40%;
+  float: right;
+  padding-top: 1em;
+}
+
+/* footer */
+
+div.my-footer {
+    background-color: #2f5275;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+}
+
+div.my-footer span {
+    font-size: 10pt;
+    color: #ffffff;
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+}

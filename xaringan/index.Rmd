@@ -1,0 +1,150 @@
+---
+title: "Welcome!"
+subtitle: "Machine Learning in the Tidyverse"
+session: 01
+author: Alison Hill
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/css/conf-theme.css", "assets/css/conf-fonts.css"]
+    seal: false 
+    lib_dir: libs
+    nature:
+      # autoplay: 5000
+      highlightStyle: solarized-light
+      highlightLanguage: ["r", "css", "yaml"]
+      slideNumberFormat: "" 
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      beforeInit: "https://platform.twitter.com/widgets.js"
+    includes:
+      in_header: [assets/header.html]
+params:
+  wifi_network: "TBD"
+  wifi_password: "TBD"
+  site_link: "rstd.io/class"
+  cloud_link: "rstd.io/class"
+  github_link: "TBD"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r delete-me, include = FALSE}
+# devtools::install_github("ropenscilabs/icon")
+# devtools::install_github("gadenbuie/countdown")
+# devtools::install_github("hadley/emo")
+```
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(collapse = TRUE,
+                      fig.retina = 3)
+library(countdown)
+```
+
+class: title-slide, center
+
+<span class="fa-stack fa-4x">
+  <i class="fa fa-circle fa-stack-2x" style="color: #ffffff;"></i>
+  <strong class="fa-stack-1x" style="color:#E7553C;">`r rmarkdown::metadata$session`</strong>
+</span> 
+
+# `r rmarkdown::metadata$title`
+
+## `r rmarkdown::metadata$subtitle`
+
+### `r rmarkdown::metadata$author`
+
+#### [`r params$site_link`](`r params$site_link`)
+
+
+---
+class: middle, center
+
+.pull-left[
+# <i class="fas fa-wifi"></i>
+
+Wifi network name  
+
+`r params$wifi_network`
+
+]
+
+.pull-left[
+# <i class="fas fa-key"></i>
+
+Wifi password
+
+`r params$wifi_password`
+
+]
+
+---
+class: middle, center
+
+# <i class="fas fa-cloud"></i>
+
+# Go here and log in (free):
+
+[`r params$cloud_link`](`r params$cloud_link`)
+
+---
+layout: true
+
+<div class="my-footer"><span>`r params$site_link`</span></div>
+
+
+---
+class: inverse
+
+# And now the footer has the link...
+
+`inverse inline code looks like this...`
+
+---
+
+```{r}
+par(mar = c(4, 4, 0.1, 0.1))
+plot(pressure, pch = 19, type = "b") #<<
+```
+
+
+---
+class: inverse
+
+# Your Turn
+
+Use the [countdown package](https://github.com/gadenbuie/countdown) for timers `r emo::ji("timer")`
+
+```{r echo=FALSE}
+countdown(minutes = 3)
+```
+
+---
+
+# DIY
+
+Or just grab the background image by [Robert Bye on Unsplash](https://unsplash.com/photos/R-WtV-QyVnY) and use it `r emo::ji("rocket")`
+
+```{r echo=FALSE, fig.align='center', out.width='50%', fig.link= 'https://unsplash.com/photos/R-WtV-QyVnY'}
+knitr::include_graphics("images/robert-bye-678640-unsplash.jpg")
+```
+
+
+---
+class: inverse, right, middle
+
+<!--customize this!-->
+
+
+<img style="border-radius: 50%;" src="https://github.com/tinystats.png" width="150px"/>
+
+# Find me at...
+
+[`r icon::fa("twitter")` @apreshill](https://twitter.com/apreshill)  
+[`r icon::fa("github")` @apreshill](https://github.com/apreshill)  
+[`r icon::fa("link")` alison.rbind.io](https://alison.rbind.io)  
+[`r icon::fa("paper-plane")` alison@rstudio.com](mailto:alison@rstudio.com)  
+
